@@ -1,0 +1,24 @@
+.footer {
+    clear: both;
+}
+.top-menu {
+    overflow: hidden;
+    background-color: #333;
+}
+.top-menu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.left-menu {
+    float: left;
+    width: 25%;
+    padding-right: 10px;
+}
+.right-content {
+    float: left;
+    width: 75%;
+}

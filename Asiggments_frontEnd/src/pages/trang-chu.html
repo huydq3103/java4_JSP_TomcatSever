@@ -1,0 +1,74 @@
+<!--banner begin-->
+<section>
+  <div class="container">
+    <div class="row">
+      <a href="#"
+        ><div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="../../assets/banner-1.jpg"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="../../assets/banner-2.jpg"
+                alt="Second slide"
+              />
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!--end bannner-->
+
+<!--san pham ban chay begin-->
+<section>
+  <div class="container">
+    <h2 style="text-align: center;margin-top: 40px;margin-bottom: 50px;">Sản phẩm bán chạy</h2>
+    <div class="row">
+      <div
+        class="col-lg-3 col-md-4 col-sm-6"
+        ng-repeat="item in listSP | filter: searchText"
+      >
+    <a href="#detail/{{item.id}}" style="text-decoration: none;color: black;">  <div class="card w-100" style="margin-bottom: 49px;">
+        <center>
+          <img class="card-img-top" src="../../assets/{{item.img}}"/>
+          <h6>{{item.name}}</h6>
+          <h5>{{item.price}}$</h5>  
+        </center>
+       </div>
+      </a> 
+      </div>
+    </div>
+  </div>
+</section>
+<!--end san pham ban chay-->
+
+<!--san pham moi nhat begin-->
+<section>
+  <div class="container">
+    <h2 style="text-align: center;margin-top: 40px;margin-bottom: 50px;">Sản phẩm mới nhất</h2>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6" ng-repeat="item in listSP  | filter: searchText" >
+       <div class="card w-100" style="margin-bottom: 49px;">
+        <center>
+          <img class="card-img-top" src="../../assets/{{item.img}}"/>
+          <h6>{{item.name}}</h6>
+          <h5>{{item.price}}$</h5>   
+        </center>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end san pham moi nhat-->

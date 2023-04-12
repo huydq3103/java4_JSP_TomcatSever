@@ -1,0 +1,100 @@
+<style>
+    input {
+      max-width: 300px;
+    }
+    button {
+      margin-left: 40px;
+    }
+  </style>
+  
+  <section>
+    <div class="row">
+      <div class="col-3" style="background-color: black">
+        <nav class="nav flex-column">
+          <h2
+            style="
+              text-align: center;
+              color: aliceblue;
+              margin-top: 40px;
+              padding-bottom: 40px;
+            "
+          >
+            Admin
+          </h2>
+          <a
+            class=""
+            style="
+              text-align: center;
+              color: aliceblue;
+              margin-top: 40px;
+              padding-bottom: 40px;
+              text-decoration: none;
+            "
+                href="#procduct"
+            ><i class="fas fa-edit"></i> Product</a
+          >
+          <a
+            class=""
+            style="
+              text-align: center;
+              color: aliceblue;
+              margin-top: 40px;
+              padding-bottom: 40px;
+              text-decoration: none;
+            "
+            href="#category"
+            ><i class="fas fa-edit"></i> Category</a
+          >
+        </nav>
+      </div>
+      <div class="col-9" style="background-color: rgb(255, 255, 255)">
+        <div class="container">
+          <form style="margin-top: 40px; margin-left: 200px">
+            <div class="row mb-3">
+              <label class="col-sm-2 col-form-label">Ten </label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputEmail3"
+                  ng-model="form2.name"
+                />
+              </div>
+            </div>
+            
+            
+  
+            <button style="margin-left: 200px;width: 80px;" type="submit" class="btn btn-primary" ng-click="add($event)">
+              Add
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              ng-click="updates($event)"
+            >
+              Update
+            </button>
+          </form>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Ten</th>
+              <th>Delete</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody ng-repeat="item in listCategory">
+            <tr>
+              <th>{{item.name}}</th>
+             
+              <td><button ng-click="xoa($event,$index)">Delete</button></td>
+              <td><button ng-click="detailss($event,$index)">Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  

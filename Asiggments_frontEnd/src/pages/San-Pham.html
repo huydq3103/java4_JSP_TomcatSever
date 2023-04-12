@@ -1,0 +1,70 @@
+<h2
+  style="
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: large;
+  "
+>
+  Tất cả sản phẩm
+</h2>
+
+<section>
+  <div class="row">
+    <div class="col-3">
+      <ul>
+        <a
+          ng-click="clearALL()"
+          href=""
+          style="text-align: center; text-decoration: none; color: rgb(4, 4, 4)"
+        >
+          <h2>ALL</h2>
+        </a>
+        <li
+          style="
+            padding-top: 30px;
+            padding-bottom: 20px;
+            text-align: center;
+            list-style: none;
+          "
+          ng-repeat="item in listCategory"
+        >
+          <a
+            style="color: rgb(4, 4, 4); text-decoration: none"
+            ng-click="getCategory($index)"
+            ng-model="search"
+            href=""
+          >
+            {{item.name}}</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col-7">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-4 col-sm-6"
+            ng-repeat= "item in listSP | filter : search "
+          >
+          <div class="w-100" style="margin-bottom: 49px;">
+            <a href="#detail/{{item.id}}" style="text-decoration: none;color: black;">  <div class="card w-100" style="margin-bottom: 49px;">
+              <center>
+                <img class="card-img-top" src="../../assets/{{item.img}}"/>
+                <h6>{{item.name}}</h6>
+                <h5>{{item.price}}$</h5>  
+              </center>
+             </div>
+            </a> 
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="Page navigation example" style="margin-top: 20px;">
+    <div data-pagination="" data-num-pages="numPages()" 
+  data-current-page="currentPage" data-max-size="maxSize"  
+  data-boundary-links="true"></div>
+  </nav>
+</section>

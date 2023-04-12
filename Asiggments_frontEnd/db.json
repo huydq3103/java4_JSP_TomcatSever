@@ -1,0 +1,180 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "email": "user",
+      "password": "1"
+    },
+    {
+      "email": "a",
+      "password": "1",
+      "id": "RlS7Qdr"
+    },
+    {
+      "email": "e",
+      "password": "11111",
+      "id": "ocpOHaf"
+    }
+  ],
+  "admin": [
+    {}
+  ],
+  "sanpham": [
+    {
+      "name": "name 2",
+      "price": 20,
+      "category": {
+        "name": "loai 1",
+        "id": "1"
+      },
+      "img": "cat-2.jpg",
+      "id": "2",
+      "soLuong": 12
+    },
+    {
+      "name": "name 2",
+      "price": 20,
+      "category": {
+        "name": "loai 1",
+        "id": "1"
+      },
+      "img": "cat-2.jpg",
+      "id": "2",
+      "soLuong": 12
+    },
+    {
+      "name": "name 4",
+      "price": 51,
+      "category": {
+        "name": "loai 1",
+        "id": "1"
+      },
+      "img": "cat-4.jpg",
+      "id": "4",
+      "soLuong": 12
+    },
+    {
+      "name": "name 5",
+      "price": 35,
+      "category": {
+        "name": "loai 1",
+        "id": "1"
+      },
+      "img": "cat-5.jpg",
+      "id": "5",
+      "soLuong": 12
+    },
+    {
+      "name": "name 6",
+      "price": 23,
+      "category": {
+        "name": "loai 4",
+        "id": "aXZ_g30"
+      },
+      "img": "feature-1.jpg",
+      "id": "6",
+      "soLuong": 12
+    },
+    {
+      "name": "name 7",
+      "price": 1,
+      "category": {
+        "name": "loai 4",
+        "id": "aXZ_g30"
+      },
+      "img": "feature-2.jpg",
+      "id": "7",
+      "soLuong": 12
+    },
+    {
+      "name": "name 8",
+      "price": 30,
+      "category": {
+        "id": "3",
+        "name": "loai 3"
+      },
+      "img": "feature-3.jpg",
+      "id": "8",
+      "soLuong": 12
+    },
+    {
+      "name": "name 12",
+      "price": 47,
+      "category": {
+        "id": "3",
+        "name": "loai 3"
+      },
+      "img": "feature-7.jpg",
+      "id": "12",
+      "soLuong": 12
+    },
+    {
+      "name": "name 13",
+      "price": 78,
+      "category": {
+        "name": "loai 1",
+        "id": "1"
+      },
+      "img": "feature-8.jpg",
+      "id": "13",
+      "soLuong": 12
+    },
+    {
+      "name": "name 22",
+      "price": "12",
+      "category": {
+        "name": "loai 4",
+        "id": "aXZ_g30"
+      },
+      "img": "feature-4.jpg",
+      "id": "zZ4m_d4",
+      "soLuong": 12
+    },
+    {
+      "name": "nam30",
+      "price": "12",
+      "category": {
+        "name": "loai 4",
+        "id": "aXZ_g30"
+      },
+      "img": "cat-3.jpg",
+      "soLuong": "",
+      "id": "mNg5IlF"
+    }
+  ],
+  "category": [
+    {
+      "name": "loai 1",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "loai 2"
+    },
+    {
+      "id": "3",
+      "name": "loai 3"
+    },
+    {
+      "name": "loai 4",
+      "id": "aXZ_g30"
+    },
+    {
+      "name": "loai 5",
+      "id": "hhIrnT_"
+    }
+  ],
+  "giohang": [
+    {
+      "name": "name 2",
+      "price": 20,
+      "category": {
+        "name": "loai 1",
+        "id": "1"
+      },
+      "img": "cat-2.jpg",
+      "id": "2",
+      "soLuong": "1"
+    }
+  ]
+}

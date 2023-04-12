@@ -1,0 +1,80 @@
+<div id="content" class="site-content" ng-if="listGiohang == '' " >
+  <div
+    id="primary"
+    class="content-area grid-parent mobile-grid-100 grid-100 tablet-grid-100"
+  >
+    <main id="main" class="site-main">
+      <article
+        id="post-5"
+        class="post-5 page type-page status-publish"
+        itemtype="https://schema.org/CreativeWork"
+        itemscope="itemscope"
+      >
+        <div class="inside-article">
+          <header class="entry-header">
+            <h1 class="entry-title" itemprop="headline">Cart</h1>
+          </header>
+          <!-- .entry-header -->
+
+          <div class="entry-content" itemprop="text">
+            <div class="woocommerce">
+              <div class="woocommerce-notices-wrapper"></div>
+              <p class="cart-empty woocommerce-info">
+                Your cart is currently empty.
+              </p>
+              <p class="return-to-shop">
+                <a class="button wc-backward" href="#san-pham">
+                  Return to shop
+                </a>
+              </p>
+            </div>
+          </div>
+          <!-- .entry-content -->
+        </div>
+        <!-- .inside-article -->
+      </article>
+      <!-- #post-## -->
+    </main>
+    <!-- #main -->
+  </div>
+  <!-- #primary -->
+</div>
+
+<div id="content" class="site-content" ng-else="listGiohang !== ''">
+  <table class="table caption-top">
+    <caption>
+      List my product
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">STT</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Subtotal</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody ng-init="total = 0">
+      <tr ng-repeat="item in listGiohang">
+        <th scope="row">{{$index+1}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.soLuong}}</td>
+        <td
+          ng-init="$parent.total = $parent.total + (item.price * item.soLuong)" 
+        >
+          {{(item.price)*(item.soLuong)}}
+        </td>
+        <td><a href="" style="color: black;" ng-click="remove($event,$index)"><i class="fa fa-trash" aria-hidden="true"></a></i>
+        </td>
+      </tr>
+    </tbody>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="margin-right: 90px" ng-model="total">Total: {{ total }}</td>
+  </table>
+  <button type="button" class="btn btn-success " style="margin-left: 66em;"  ng-click="mua()">Thanh Toan</button> 
+</div>
